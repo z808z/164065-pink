@@ -1,0 +1,24 @@
+{
+  "name": "164065-pink",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Личный проект «Пинк» от HTML Academy",
+  "author": "Евгений Соломеин",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/htmlacademy-adaptive/164065-pink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/htmlacademy-adaptive/164065-pink/issues"
+  },
+  "homepage": "https://github.com/htmlacademy-adaptive/164065-pink",
+  "devDependencies": {
+    "editorconfig-tools": "0.1.1"
+  },
+  "scripts": {
+    "test": "editorconfig-tools check *"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}
