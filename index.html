@@ -6,7 +6,157 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+  <header class="page-header">
+
+    <div class="page-header__logo"></div>
+    <nav class="main-nav">
+      <span class="main-nav__toogle main-nav__toogle--closed"></span>
+      <div class="main-nav__wrapper main-nav__wrapper--closed">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="#">Информация</a></li>
+          <li class="main-nav__item"><a href="#">Возможности</a></li>
+          <li class="main-nav__item"><a href="#">Отзывы</a></li>
+          <li class="main-nav__item"><a href="#">Стоимость</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="page-main">
+
+    <section class="download-app">
+      <header class="download-app__header">
+        <h2 class="download-app__title">Взгляни на жизнь иначе!</h2>
+      </header>
+      <div class="download-app__content">
+        <a href="#" class="btn download-app__btn">Скачать приложение</a>
+        <ul class="download-app__items">
+          <li class="download-app__item download-app__item--apple"><a href="https://itunes.apple.com/ru"><img src="http://placehold.it/50x60" alt="Apple"></a></li>
+          <li class="download-app__item download-app__item--android"><a href="https://play.google.com/store"><img src="http://placehold.it/50x60" alt="Android"></a></li>
+          <li class="download-app__item download-app__item--windows"><a href="https://www.microsoft.com/ru-ru/store/apps/windows"><img src="http://placehold.it/50x60" alt="Windows"></a></li>
+        </ul>
+        <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <header class="features__header">
+        <h2 class="features__title">Устали от серости мегаполиса?</h2>
+        <h2 class="features__title">Нам есть, что вам предложить!</h2>
+      </header>
+      <ul class="features__items">
+        <li class="features__item">
+          <h3 class="features__title">Поднимает настроение</h3>
+          <div class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</div>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Меняет мир вокруг</h3>
+          <div class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</div>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Заводит новых друзей</h3>
+          <div class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</div>
+        </li>
+      </ul>
+      <div class="features__picture">
+        <img src="http://placehold.it/157x320" alt="Телефон">
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__items">
+        <input class="slider-nav__switcher" type="radio" name="review" id="review-radio-1">
+        <input class="slider-nav__switcher" type="radio" name="review" id="review-radio-2">
+        <input class="slider-nav__switcher" type="radio" name="review" id="review-radio-3">
+        <div class="reviews__item">
+          <h3 class="reviews__title">Николай Петров</h3>
+          <div class="reviews__text">
+            "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+          </div>
+        </div>
+        <div class="reviews__item">
+          <h3 class="reviews__title">Николай Петров</h3>
+          <div class="reviews__text">
+            "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+          </div>
+        </div>
+        <div class="reviews__item">
+          <h3 class="reviews__title">Николай Петров</h3>
+          <div class="reviews__text">
+            "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+          </div>
+        </div>
+      </div>
+      <div class="slider-nav advantages__nav">
+        <label class="slider-nav__btn" for="review-radio-1">1</label>
+        <label class="slider-nav__btn" for="review-radio-2">2</label>
+        <label class="slider-nav__btn" for="review-radio-3">3</label>
+      </div>
+    </section>
+
+    <section class="app-versions">
+      <div class="app-versions__items">
+        <input class="slider-nav__switcher" type="radio" name="app-versions" id="app-versions-radio-1">
+        <input class="slider-nav__switcher" type="radio" name="app-versions" id="app-versions-radio-2">
+        <input class="slider-nav__switcher" type="radio" name="app-versions" id="app-versions-radio-3">
+        <div class="app-versions__item">
+          <div class="app-versions__header">
+            <div class="app-versions__name">
+              Стандарт
+            </div>
+            <div class="app-versions__price">
+              3,99 USD
+            </div>
+          </div>
+          <div class="app-versions__attrs">
+            <div class="app-version__attr">
+              Розовый фильтр
+            </div>
+            <div class="app-version__attr">
+              Смайлики
+            </div>
+            <div class="app-version__attr">
+              Комментарии
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-nav app-versions__nav">
+        <label class="slider-nav__btn" for="app-versions-radio-1">1</label>
+        <label class="slider-nav__btn" for="app-versions-radio-2">2</label>
+        <label class="slider-nav__btn" for="app-versions-radio-3">3</label>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+
+    <section class="contacts">
+      <header class="contacts__header">
+        <div class="contacts__header__title">Остались вопросы?</div>
+        <div class="contacts__header__title">Свяжитесь с нами!</div>
+      </header>
+      <ul class="contacts__items">
+        <li class="contacts__item">
+          <h3 class="contacts__title">Звоните:</h3>
+          <div class="contacts__text">+7 (812) 555-66-66</div>
+        </li>
+        <li class="contacts__item">
+          <h3 class="contacts__title">Пишите:</h3>
+          <div class="contacts__text">mail@htmlacademy.ru</div>
+        </li>
+        <li class="contacts__item">
+          <h3 class="contacts__title">Приезжайте в гости:</h3>
+          <div class="contacts__text">ул. Большая Конюшенная, 19/8</div>
+        </li>
+      </ul>
+      <div class="contacts-map">
+      </div>
+    </section>
+
+  </footer>
 
   </body>
 </html>
