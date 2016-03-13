@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+  <header class="page-header">
+
+    <div class="page-header__logo"><a href="index.html"></a></div>
+    <nav class="main-nav">
+      <span class="main-nav__toogle main-nav__toogle--closed"></span>
+      <div class="main-nav__wrapper main-nav__wrapper--closed">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item main-nav__item--active"><a href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="page-main">
+
+    <section class="intro">
+      <header class="intro__header">
+        <h1 class="intro__title">Фотографии пользователей</h1>
+      </header>
+    </section>
+
+    <section class="photogallery">
+      <header class="photogallery__header">
+        <p class="photogallery__title">Взгляните на фотографии, которые выкладывают пользователи!</p>
+        <p class="photogallery__title">Видите, как не хватает ваших?</p>
+      </header>
+
+      <ul class="user-photo-items">
+        <li class="user-photo-item">
+          <div class="user-photo-item__image user-photo-item__image--panorama"><img src="http://placehold.it/280x180" alt="Фотография"></div>
+          <h4 class="user-photo-item__username">Анна</h4>
+          <span class="user-photo-item__datatime">(5 минут назад)</span>
+          <p class="user-photo-item__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+          <p class="user-photo-item__likes">Нравится: 215</p>
+        </li>
+        <li class="user-photo-item">
+          <div class="user-photo-item__image"><img src="http://placehold.it/280x180" alt="Фотография"></div>
+          <h4 class="user-photo-item__username">Левон</h4>
+          <span class="user-photo-item__datatime">(5 часов назад)</span>
+          <p class="user-photo-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="user-photo-item__likes">Нравится: 356</p>
+        </li>
+        <li class="user-photo-item">
+          <div class="user-photo-item__image"><img src="http://placehold.it/280x180" alt="Фотография"></div>
+          <h4 class="user-photo-item__username">Антон</h4>
+          <span class="user-photo-item__datatime">(12 часов назад)</span>
+          <p class="user-photo-item__text">Соседи будут рады!</p>
+          <p class="user-photo-item__likes">Нравится: 666</p>
+        </li>
+        <li class="user-photo-item">
+          <div class="user-photo-item__image"><img src="http://placehold.it/280x180" alt="Фотография"></div>
+          <h4 class="user-photo-item__username">Борис</h4>
+          <span class="user-photo-item__datatime">(20 часов назад)</span>
+          <p class="user-photo-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="user-photo-item__likes">Нравится: 215</p>
+        </li>
+        <li class="user-photo-item">
+          <div class="user-photo-item__image"><img src="http://placehold.it/280x180" alt="Фотография"></div>
+          <h4 class="user-photo-item__username">Сергей</h4>
+          <span class="user-photo-item__datatime">(25 часов назад)</span>
+          <p class="user-photo-item__text">Самая кубанская в мире!</p>
+          <p class="user-photo-item__likes">Нравится: 4</p>
+        </li>
+        <li class="user-photo-item">
+          <div class="user-photo-item__image"><img src="http://placehold.it/280x180" alt="Фотография"></div>
+          <h4 class="user-photo-item__username">Максим</h4>
+          <span class="user-photo-item__datatime">(40 часов назад)</span>
+          <p class="user-photo-item__text">Где снег-то?</p>
+          <p class="user-photo-item__likes">Нравится: 150</p>
+        </li>
+        <li class="user-photo-item">
+          <div class="user-photo-item__image"><img src="http://placehold.it/280x180" alt="Фотография"></div>
+          <h4 class="user-photo-item__username">Надежда</h4>
+          <span class="user-photo-item__datatime">Всем GM и взаимные лайки!</span>
+          <p class="user-photo-item__text">(45 часов назад)</p>
+          <p class="user-photo-item__likes">Нравится: 2560</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="editor">
+      <header class="editor__header">
+        <p class="editor__title">Затмите их всех!</p>
+        <p class="editor__title">Выкладывайте все, что накопилось в телефоне!</p>
+      </header>
+      <form action="https://htmlacademy.ru/echo" method="post" enctype="multipart/form-data">
+        <input class="editor__load-photo" type="file" name="load">
+        <div class="editor__photo">
+          <img src="http://placehold.it/280x180" alt="Заснеженная дорога">
+        </div>
+        <div class="editor__toolbar">
+          <div class="editor__tool  editor__tool--crop  editor__tool--active">
+            <input class="editor__tool-btn" type="checkbox" name="crop" id="crop">
+            <label class="editor__tool-icon" for="crop"></label>
+            <input class="editor__tool-range" type="range" min="1" max="10" step="1">
+          </div>
+          <div class="editor__tool  editor__tool--color">
+            <input class="editor__tool-btn" type="checkbox" name="color" id="color">
+            <label class="editor__tool-icon" for="color"></label>
+            <input class="editor__tool-range" type="range" min="1" max="10" step="1">
+          </div>
+          <div class="editor__tool  editor__tool--contrast">
+            <input class="editor__tool-btn" type="checkbox" name="contrast" id="contrast">
+            <label class="editor__tool-icon" for="contrast"></label>
+            <input class="editor__tool-range" type="range" min="1" max="10" step="1">
+          </div>
+        </div>
+        <button class="btn btn--post" type="submit">Запостить</button>
+        <button class="btn btn--cancel" type="reset" disabled>Отмена</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <a class="page-footer__logo" href="index.html">
+        <img src="http://placehold.it/147x40" alt="Мобильное приложение Pink">
+      </a>
+      <div class="page-footer__social">
+        <a class="social-link  social-link--twitter" href="#"></a>
+        <a class="social-link  social-link--facebook" href="#"></a>
+        <a class="social-link  social-link--youtube" href="#"></a>
+      </div>
+      <a class="page-footer__copyright" href="https://htmlacademy.ru/">
+        <span class="page-footer__dev">Разработано</span>
+        <img class="page-footer__logo" src="http://placehold.it/27x34" alt="htmlacademy">
+      </a>
+    </div>
+  </footer>
+
+  </body>
+</html>
