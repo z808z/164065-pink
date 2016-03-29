@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
   <header class="page-header">
 
-    <div class="page-header__logo"><a href="index.html"></a></div>
+    <a href="index.html" class="page-header__logo"></a>
     <nav class="main-nav">
       <span class="main-nav__toogle main-nav__toogle--closed"></span>
       <div class="main-nav__wrapper main-nav__wrapper--closed">
@@ -43,7 +44,7 @@
           <input class="form-filter__text" type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic">
         </fieldset>
         <fieldset class="form-filter">
-          <legend class="form-filter__title  form-filter__title--center">Ваши безбашенные достижения в путешествии</legend>
+          <h3 class="form-filter__title  form-filter__title--center">Ваши безбашенные достижения в путешествии</h3>
           <input class="form-filter__checkbox" type="checkbox" name="shark" id="shark" checked>
           <label class="form-filter__item" for="shark">Сделал селфи с акулой</label>
           <input class="form-filter__checkbox" type="checkbox" name="burned" id="burned" checked>
@@ -64,7 +65,7 @@
           <input class="form-filter__text" type="email" name="email" placeholder="E-mail, пожалуйста" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" required>
         </fieldset>
         <fieldset class="form-filter">
-          <legend class="form-filter__title  form-filter__title--center">С каким приложением путешествовали?</legend>
+          <h3 class="form-filter__title  form-filter__title--center">С каким приложением путешествовали?</h3>
           <input class="form-filter__radio" type="radio" name="app-apple" id="app-apple" checked>
           <label class="form-filter__item" for="app-apple">Pink для iOS</label>
           <input class="form-filter__radio" type="radio" name="app-android" id="app-android">
@@ -96,7 +97,7 @@
       </div>
       <a class="page-footer__copyright" href="https://htmlacademy.ru/">
         <span class="page-footer__dev">Разработано</span>
-        <img class="page-footer__logo" src="http://placehold.it/27x34" alt="htmlacademy">
+        <img class="page-footer__logo-htmlacademy" src="http://placehold.it/27x34" alt="htmlacademy">
       </a>
     </div>
   </footer>
