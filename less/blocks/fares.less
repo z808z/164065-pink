@@ -1,0 +1,309 @@
+.fares {
+  background-color: #f2f2f2;
+  &::before {
+    content: "";
+    display: block;
+    height: 27px;
+    background-image: linear-gradient(to right bottom, #ffffff 50%, #f2f2f2 50%);
+    @media @tablet-widths {
+      height: 53px;
+    }
+    @media @desktop-widths {
+      height: 82px;
+    }
+  }
+}
+
+.fares__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.fares__slide-radio {
+  display: none;
+}
+
+.fares__switch-points {
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  @media @tablet-widths {
+    display: none;
+  }
+}
+
+.fares__switch-point {
+  height: 6px;
+  width: 6px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  border: 3px solid #f2f2f2;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.fares__switch-point:hover {
+  cursor: pointer;
+  background-color: #7e868f;
+}
+
+.fares__switch-point:active {
+  background-color: #e9ebec;
+}
+
+.fares__slide-radio--1:checked ~ .fares__switch-points .fares__switch-point--1,
+.fares__slide-radio--2:checked ~ .fares__switch-points .fares__switch-point--2,
+.fares__slide-radio--3:checked ~ .fares__switch-points .fares__switch-point--3 {
+  background-color: #ffffff;
+  border: 3px solid #283645;
+  cursor: default;
+}
+
+.fares__slide-radio--1:checked ~ .fares__list {
+  top: 0;
+  left: 0;
+}
+
+.fares__slide-radio--2:checked ~ .fares__list {
+  top: 0;
+  left: -280px;
+  @media @tablet-widths {
+    left: 0;
+  }
+}
+
+.fares__slide-radio--3:checked ~ .fares__list {
+  top: 0;
+  left: -560px;
+  @media @tablet-widths {
+    left: 0;
+  }
+}
+
+.fares__list {
+  position: relative;
+  width: @mobile-width-wrapper * 3;
+  margin: 64px 0 100px 0;
+  table-layout: fixed;
+  border-collapse: separate;
+  @media @tablet-widths {
+    width: 100%;
+    margin: 36px 0 69px 0;
+  }
+  @media @desktop-widths {
+    margin: 66px 0 100px 0;
+  }
+}
+
+.fares__item-name {
+  padding: 15px 0 20px 0;
+  border-right: 2px solid #e5e5e5;
+  background-color: #283645;
+  text-align: center;
+  @media @tablet-widths {
+    padding: 13px 0 11px 0;
+  }
+  @media @desktop-widths {
+    padding: 16px 0 20px 0;
+  }
+}
+
+.fares__item-name:first-child {
+  @media @mobile-width-only {
+    display: none;
+  }
+  background-color: transparent;
+}
+
+.fares__item-name:nth-child(2) {
+  border-left: 2px solid #283645;
+  border-radius: 3px 0 0 3px;
+}
+
+.fares__item-name:last-child {
+  border-right: 2px solid #283645;
+  border-radius: 0 3px 3px 0;
+}
+
+.fares__list-row:first-child .fares__filter-name {
+  border-radius: 3px 0 0 0;
+}
+
+.fares__list-row:last-child .fares__filter-name {
+  border-radius: 0 0 0 3px;
+}
+
+.fares__list-row:last-child .fares__option:last-child {
+  border-radius: 0 0 3px 0;
+}
+
+
+.fares__item-name--hit {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 70px;
+    height: 70px;
+    background-image: linear-gradient(135deg, transparent 23%, #d22856 23%, #d22856 50%, transparent 50%);
+    @media @tablet-widths {
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background-image: linear-gradient(135deg, transparent 18%, #d22856 18%, #d22856 50%, transparent 50%);
+    }
+    @media @desktop-widths {
+      width: 75px;
+      height: 75px;
+      background-image: linear-gradient(135deg, transparent 23%, #d22856 23%, #d22856 50%, transparent 50%);
+    }
+  }
+  &::after {
+    content: "ХИТ";
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    @media @tablet-widths {
+      top: 9px;
+      left: 6px;
+    }
+    @media @desktop-widths {
+      top: 19px;
+      left: 12px;
+    }
+  }
+}
+
+.fares__price-name {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  @media @tablet-widths {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  @media @desktop-widths {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.fares__price-item {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: uppercase;
+  @media @tablet-widths {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  @media @desktop-widths {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.fares__filter-name {
+  @media @mobile-width-only {
+      display: none;
+  }
+  padding: 0 10px 0 15px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  font-weight: 400;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  @media @desktop-widths {
+    padding: 0 10px 0 20px;
+    font-size: 18px;
+  }
+}
+
+.fares__option {
+  height: 59px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  @media @tablet-widths {
+    height: 45px;
+    padding: 0;
+    font-size: 0;
+  }
+  @media @desktop-widths {
+    height: 59px;
+  }
+}
+
+.fares__option-name {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px 70px 0 24px;
+  @media @tablet-widths {
+    padding: 0;
+  }
+}
+
+
+.fares__option-name--include::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  display: block;
+  width: 25px;
+  height: 12px;
+  margin-top: -13px;
+  border-radius: 3px;
+  border-bottom: 4px solid #3dc644;
+  border-left: 4px solid #3dc644;
+  transform: rotate(-45deg);
+  @media @tablet-widths {
+    left: 50%;
+    margin-left: -16px;
+  }
+}
+
+.fares__option-name--exclude::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  display: block;
+  width: 27px;
+  height: 27px;
+  margin-top: -14px;
+  background-image: linear-gradient( 45deg, transparent 46%, #f25b26 46%, #f25b26 54%, transparent 54%),
+                    linear-gradient( -45deg,  transparent 43%, #f25b26 43%, #f25b26 52%, transparent 52%);
+  @media @tablet-widths {
+    left: 50%;
+    margin-left: -13px;
+  }
+}
