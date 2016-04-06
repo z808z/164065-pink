@@ -2,126 +2,237 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>HTML Academy: Пинк | Фотографии участников</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
-  <header class="page-header">
 
-    <a href="index.html" class="page-header__logo"></a>
+  <header class="page-header page-header--inner-page">
     <nav class="main-nav">
-      <span class="main-nav__toogle main-nav__toogle--closed"></span>
-      <div class="main-nav__wrapper main-nav__wrapper--closed">
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item main-nav__item--active"><a href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
-        </ul>
+      <div class="main-nav__wrapper">
+        <a href="index.html" class="main-nav__logo main-nav__logo--without-js"></a>
+        <span class="main-nav__toogle main-nav__toogle--without-js"></span>
+        <div class="main-nav__menu main-nav__menu--without-js">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="index.html" class="main-nav__menu-link">Главная</a></li>
+            <li class="main-nav__item main-nav__item--active"><a href="photo.html" class="main-nav__menu-link">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__menu-link">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru" class="main-nav__menu-link">HTML ACADEMY</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
+
+    <div class="page-header__wrapper">
+        <h1 class="page-header__title page-header__title--photo-page">Фотографии пользователей</h1>
+    </div>
 
   </header>
 
   <main class="page-main">
 
-    <section class="intro">
-      <header class="intro__header">
-        <h1 class="intro__title">Фотографии пользователей</h1>
-      </header>
-    </section>
-
-    <section class="photogallery">
-      <header class="photogallery__header">
-        <p class="photogallery__title">Взгляните на фотографии, которые выкладывают пользователи!</p>
-        <p class="photogallery__title">Видите, как не хватает ваших?</p>
-      </header>
-
-      <ul class="user-photo-items">
-        <li class="user-photo-item">
-          <div class="user-photo-item__image user-photo-item__image--panorama"><img src="http://placehold.it/280x180" alt="Фотография"></div>
-          <h4 class="user-photo-item__username">Анна</h4>
-          <span class="user-photo-item__datatime">(5 минут назад)</span>
-          <p class="user-photo-item__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-          <p class="user-photo-item__likes">Нравится: 215</p>
-        </li>
-        <li class="user-photo-item">
-          <div class="user-photo-item__image"><img src="http://placehold.it/280x180" alt="Фотография"></div>
-          <h4 class="user-photo-item__username">Левон</h4>
-          <span class="user-photo-item__datatime">(5 часов назад)</span>
-          <p class="user-photo-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <p class="user-photo-item__likes">Нравится: 356</p>
-        </li>
-        <li class="user-photo-item">
-          <div class="user-photo-item__image"><img src="http://placehold.it/280x180" alt="Фотография"></div>
-          <h4 class="user-photo-item__username">Антон</h4>
-          <span class="user-photo-item__datatime">(12 часов назад)</span>
-          <p class="user-photo-item__text">Соседи будут рады!</p>
-          <p class="user-photo-item__likes">Нравится: 666</p>
-        </li>
-        <li class="user-photo-item">
-          <div class="user-photo-item__image"><img src="http://placehold.it/280x180" alt="Фотография"></div>
-          <h4 class="user-photo-item__username">Борис</h4>
-          <span class="user-photo-item__datatime">(20 часов назад)</span>
-          <p class="user-photo-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <p class="user-photo-item__likes">Нравится: 215</p>
-        </li>
-        <li class="user-photo-item">
-          <div class="user-photo-item__image"><img src="http://placehold.it/280x180" alt="Фотография"></div>
-          <h4 class="user-photo-item__username">Сергей</h4>
-          <span class="user-photo-item__datatime">(25 часов назад)</span>
-          <p class="user-photo-item__text">Самая кубанская в мире!</p>
-          <p class="user-photo-item__likes">Нравится: 4</p>
-        </li>
-        <li class="user-photo-item">
-          <div class="user-photo-item__image"><img src="http://placehold.it/280x180" alt="Фотография"></div>
-          <h4 class="user-photo-item__username">Максим</h4>
-          <span class="user-photo-item__datatime">(40 часов назад)</span>
-          <p class="user-photo-item__text">Где снег-то?</p>
-          <p class="user-photo-item__likes">Нравится: 150</p>
-        </li>
-        <li class="user-photo-item">
-          <div class="user-photo-item__image"><img src="http://placehold.it/280x180" alt="Фотография"></div>
-          <h4 class="user-photo-item__username">Надежда</h4>
-          <span class="user-photo-item__datatime">Всем GM и взаимные лайки!</span>
-          <p class="user-photo-item__text">(45 часов назад)</p>
-          <p class="user-photo-item__likes">Нравится: 2560</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="editor">
-      <header class="editor__header">
-        <p class="editor__title">Затмите их всех!</p>
-        <p class="editor__title">Выкладывайте все, что накопилось в телефоне!</p>
-      </header>
-      <form action="https://htmlacademy.ru/echo" method="post" enctype="multipart/form-data">
-        <input class="editor__load-photo" type="file" name="load">
-        <div class="editor__photo">
-          <img src="http://placehold.it/280x180" alt="Заснеженная дорога">
+     <section class="photos">
+        <div class="photos__wrapper">
+          <p class="photos__description">
+            Взгляните на фотографии, которые выкладывают пользователи!
+            Видите, как не хватает ваших?
+          </p>
         </div>
-        <div class="editor__toolbar">
-          <div class="editor__tool  editor__tool--crop  editor__tool--active">
-            <input class="editor__tool-btn" type="checkbox" name="crop" id="crop">
-            <label class="editor__tool-icon" for="crop"></label>
-            <input class="editor__tool-range" type="range" min="1" max="10" step="1">
-          </div>
-          <div class="editor__tool  editor__tool--color">
-            <input class="editor__tool-btn" type="checkbox" name="color" id="color">
-            <label class="editor__tool-icon" for="color"></label>
-            <input class="editor__tool-range" type="range" min="1" max="10" step="1">
-          </div>
-          <div class="editor__tool  editor__tool--contrast">
-            <input class="editor__tool-btn" type="checkbox" name="contrast" id="contrast">
-            <label class="editor__tool-icon" for="contrast"></label>
-            <input class="editor__tool-range" type="range" min="1" max="10" step="1">
+        <div class="user-post user-post--panoramic">
+          <div class="user-post__wrapper user-post__wrapper--panoramic"></div>
+          <a href="#" class="user-post__link user-post__link--panoramic">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" class="user-post__img user-post__img--panoramic" alt="Панорама">
+            </picture>
+          </a>
+          <div class="user-post__wrapper">
+            <div class="user-post__inner-wrapper user-post__inner-wrapper--panoramic">
+              <div class="user-post__user-detail">
+                <span class="user-post__user-name">Анна</span>
+                <time class="user-post__time" datetime="2004-07-24T18:18">(5 минут назад)</time>
+              </div>
+              <p class="user-post__comment">
+                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+                трансляцию в перископе, задавайте свои вопросы!
+              </p>
+              <a href="#" class="user-post__like user-post__like--panoramic">Нравится: 215</a>
+            </div>
           </div>
         </div>
-        <button class="btn btn--post" type="submit">Запостить</button>
-        <button class="btn btn--cancel" type="reset" disabled>Отмена</button>
-      </form>
-    </section>
+        <div class="photos__wrapper">
+          <div class="user-post">
+            <a href="#" class="user-post__link">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" class="user-post__img" alt="Камера">
+              </picture>
+            </a>
+            <div class="user-post__inner-wrapper">
+              <div class="user-post__user-detail">
+                <span class="user-post__user-name">Левон</span>
+                <time class="user-post__time" datetime="2004-07-24T18:18">(5 часов назад)</time>
+              </div>
+              <p class="user-post__comment">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <a href="#" class="user-post__like">Нравится: 356</a>
+            </div>
+          </div>
+          <div class="user-post">
+            <a href="#" class="user-post__link">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" class="user-post__img" alt="Камера">
+              </picture>
+            </a>
+            <div class="user-post__inner-wrapper">
+              <div class="user-post__user-detail">
+                <span class="user-post__user-name">Антон</span>
+                <time class="user-post__time" datetime="2004-07-24T18:18">(12 часов назад)</time>
+              </div>
+              <p class="user-post__comment">
+                Соседи будут рады!
+              </p>
+              <a href="#" class="user-post__like">Нравится: 666</a>
+            </div>
+          </div>
+          <div class="user-post">
+            <a href="#" class="user-post__link">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" class="user-post__img" alt="Камера">
+              </picture>
+            </a>
+            <div class="user-post__inner-wrapper">
+              <div class="user-post__user-detail">
+                <span class="user-post__user-name">Борис</span>
+                <time class="user-post__time" datetime="2004-07-24T18:18">(20 часов назад)</time>
+              </div>
+              <p class="user-post__comment">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <a href="#" class="user-post__like">Нравится: 215</a>
+            </div>
+          </div>
+          <div class="user-post">
+            <a href="#" class="user-post__link">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" class="user-post__img" alt="Камера">
+              </picture>
+            </a>
+            <div class="user-post__inner-wrapper">
+              <div class="user-post__user-detail">
+                <span class="user-post__user-name">Сергей</span>
+                <time class="user-post__time" datetime="2004-07-24T18:18">(25 часов назад)</time>
+              </div>
+              <p class="user-post__comment">
+                Самая кубанская в мире!
+              </p>
+              <a href="#" class="user-post__like">Нравится: 4</a>
+            </div>
+          </div>
+          <div class="user-post">
+            <a href="#" class="user-post__link">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                <img src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" class="user-post__img" alt="Камера">
+              </picture>
+            </a>
+            <div class="user-post__inner-wrapper">
+              <div class="user-post__user-detail">
+                <span class="user-post__user-name">Максим</span>
+                <time class="user-post__time" datetime="2004-07-24T18:18">(40 часов назад)</time>
+              </div>
+              <p class="user-post__comment">
+                Где снег-то?
+              </p>
+              <a href="#" class="user-post__like">Нравится: 150</a>
+            </div>
+          </div>
+          <div class="user-post">
+            <a href="#" class="user-post__link">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                <img src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" class="user-post__img" alt="Камера">
+              </picture>
+            </a>
+            <div class="user-post__inner-wrapper">
+              <div class="user-post__user-detail">
+                <span class="user-post__user-name">Надежда</span>
+                <time class="user-post__time" datetime="2004-07-24T18:18">(45 часов назад)</time>
+              </div>
+              <p class="user-post__comment">
+                Всем GM и взаимные лайки!
+              </p>
+              <a href="#" class="user-post__like">Нравится: 2560</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="editor">
+        <div class="editor__wrapper-description">
+          <p class="editor__description">
+            Затмите их всех!<br>
+            Выкладывайте все, что накопилось в телефоне!
+          </p>
+        </div>
+        <div class="editor__wrapper">
+          <div class="editor__my-photo">
+            <form class="editor__form">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-7-desktop.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+                <img src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" class="user-post__img" alt="Камера">
+              </picture>
+              <div class="editor__inner-wrapper">
+                <ul class="editor__toolbar">
+                  <li class="editor__toolbar-item editor__toolbar-item--crop editor__toolbar-item--active">
+                    <div class="editor__tool editor__tool--crop">
+                    </div>
+                    <div class="editor__tool-line">
+                      <div class="editor__line">
+                        <div class="editor__point" style="left:20%"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="editor__toolbar-item editor__toolbar-item--color">
+                    <div class="editor__tool editor__tool--color">
+                    </div>
+                    <div class="editor__tool-line">
+                      <div class="editor__line">
+                        <div class="editor__point" style="left:20%"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="editor__toolbar-item editor__toolbar-item--contrast">
+                    <div class="editor__tool editor__tool--contrast">
+                    </div>
+                    <div class="editor__tool-line">
+                      <div class="editor__line">
+                        <div class="editor__point" style="left:20%"></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="editor__buttons">
+                  <button type="submit" class="btn btn--submit">Запостить</button>
+                  <button type="reset" class="btn btn--cancel">Отмена</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
 
   </main>
 

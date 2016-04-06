@@ -1,0 +1,35 @@
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #283645;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.page-header__wrapper,
+.page-wrapper,
+.page-main-wrapper,
+.main-nav__wrapper,
+.features__title-wrapper,
+.features__inner-wrapper,
+.features__effect-wrapper,
+.reviews__wrapper,
+.fares__wrapper,
+.contacts__wrapper,
+.form__wrapper,
+.photos__wrapper,
+.user-post__wrapper,
+.editor__wrapper,
+.page-footer__wrapper {
+  width: @mobile-width-wrapper;
+  margin: 0 auto;
+  padding: 0 @mobile-width-wrapper-padding;
+  @media @tablet-widths {
+    width: @tablet-width-wrapper;
+    padding: 0 @tablet-width-wrapper-padding;
+  }
+  @media @desktop-widths {
+    width: @desktop-width-wrapper;
+    padding: 0 @desktop-width-wrapper-padding;
+  }
+}

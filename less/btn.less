@@ -1,0 +1,72 @@
+.btn {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 49px;
+  font-size: 18px;
+  line-height: 49px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+}
+
+.btn--download {
+  @media @desktop-widths {
+    font-size: 21px;
+  }
+}
+
+.btn--download:hover {
+  color: rgba(210, 40, 86, 1);
+  background-color: #ffffff;
+}
+
+.btn--download:active {
+  color: rgba(210, 40, 86, 0.3);
+  background-color: #ffffff;
+}
+
+.btn--submit,
+.btn--cancel {
+  @media @tablet-widths {
+    width: 260px;
+  }
+  @media @desktop-widths {
+    width: 185px;
+  }
+}
+
+.btn--submit {
+  color: #d22856;
+  border-color: #d22856;
+  background-color: #f2f2f2;
+}
+
+.btn--submit:hover {
+  color: #ffffff;
+  background-color: #d22856;
+}
+
+.btn--submit:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d22856;
+}
+
+.btn--cancel {
+  color: rgba(40, 54, 68, 0.1);
+  border-color: rgba(40, 54, 68, 0.1);
+  background-color: transparent;
+}
+
+.btn--cancel:hover {
+  color: rgba(40, 54, 68, 0.3);
+  border-color: rgba(40, 54, 68, 0.3);
+}
+
+.btn--cancel:active {
+  color: rgba(255, 255, 255, 0.3);
+  border-color: transparent;
+  background-color: rgba(40, 54, 68, 0.3);
+}

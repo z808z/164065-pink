@@ -1,4 +1,4 @@
-.editor {
+.my-post {
   background-color: #f2f2f2;
   @media @desktop-widths {
     background-color: #ffffff;
@@ -6,14 +6,14 @@
   }
 }
 
-.editor__wrapper-description {
+.my-post__wrapper-description {
   width: 100%;
   box-sizing: border-box;
   padding: 0 20px;
   background-color: #ffffff;
 }
 
-.editor__description {
+.my-post__description {
   width: @mobile-width-wrapper;
   margin: 0 auto;
   padding-bottom: 42px;
@@ -33,7 +33,7 @@
   }
 }
 
-.editor__form {
+.my-post__form {
   display: flex;
   flex-direction: column;
   @media @tablet-widths {
@@ -42,7 +42,7 @@
   }
 }
 
-.editor__my-photo {
+.my-post__my-photo {
   padding: 20px 0 42px 0;
   @media @tablet-widths {
     padding: 61px 0 52px 0;
@@ -53,7 +53,7 @@
   }
 }
 
-.editor__img {
+.my-post__img {
   width: @mobile-width-wrapper;
   height: auto;
   @media @tablet-widths {
@@ -62,7 +62,7 @@
   }
 }
 
-.editor__inner-wrapper {
+.my-post__inner-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -75,7 +75,7 @@
   }
 }
 
-.editor__toolbar {
+.my-post__toolbar {
   position: relative;
   display: flex;
   margin: 0;
@@ -93,7 +93,7 @@
   }
 }
 
-.editor__toolbar-item {
+.my-post__toolbar-item {
   display: flex;
   margin: 0 16px;
   @media @tablet-widths {
@@ -104,7 +104,7 @@
   }
 }
 
-.editor__tool {
+.my-post__tool {
   width: 47px;
   height: 47px;
   background-repeat: no-repeat;
@@ -122,27 +122,27 @@
   }
 }
 
-.editor__toolbar-item--active {
+.my-post__toolbar-item--active {
   @media @mobile-width-only {
-    & .editor__tool--crop,
-    & .editor__tool--crop:hover {
+    & .my-post__tool--crop,
+    & .my-post__tool--crop:hover {
       background-image: url("../img/icon-editor-crop-active.svg");
       cursor: default;
     }
-    & .editor__tool--color,
-    & .editor__tool--color:hover {
+    & .my-post__tool--color,
+    & .my-post__tool--color:hover {
       background-image: url("../img/icon-editor-fill-active.svg");
       cursor: default;
     }
-    & .editor__tool--contrast,
-    & .editor__tool--contrast:hover {
+    & .my-post__tool--contrast,
+    & .my-post__tool--contrast:hover {
       background-image: url("../img/icon-editor-contrast-active.svg");
       cursor: default;
     }
   }
 }
 
-.editor__tool--crop {
+.my-post__tool--crop {
   background-image: url("../img/icon-editor-crop.svg");
   @media @mobile-width-only {
     &:hover {
@@ -158,7 +158,7 @@
   }
 }
 
-.editor__tool--color {
+.my-post__tool--color {
   background-image: url("../img/icon-editor-fill.svg");
   @media @mobile-width-only {
     &:hover {
@@ -174,7 +174,7 @@
   }
 }
 
-.editor__tool--contrast {
+.my-post__tool--contrast {
   background-image: url("../img/icon-editor-contrast.svg");
   background-size: 33px 33px;
   @media @mobile-width-only {
@@ -193,7 +193,7 @@
   }
 }
 
-.editor__tool-line {
+.my-post__tool-line {
   display: none;
   width: @mobile-width-wrapper + 2 * @mobile-width-wrapper-padding;
   box-sizing: border-box;
@@ -211,7 +211,7 @@
   }
 }
 
-.editor__toolbar-item--active .editor__tool-line {
+.my-post__toolbar-item--active .my-post__tool-line {
   position: absolute;
   top: 125px;
   left: -@mobile-width-wrapper-padding;
@@ -221,13 +221,13 @@
   }
 }
 
-.editor__line {
+.my-post__line {
   position: relative;
   height: 2px;
   background-color: #283645;
 }
 
-.editor__point {
+.my-post__point {
   position: absolute;
   top: -6px;
   width: 10px;
@@ -237,15 +237,15 @@
   border: 2px solid #d22856;
 }
 
-.editor__point:hover {
+.my-post__point:hover {
   cursor: pointer;
 }
 
-.editor__point:active {
+.my-post__point:active {
   background-color: #d22856;
 }
 
-.editor__toolbar-item--active .editor__tool-line::after {
+.my-post__toolbar-item--active .my-post__tool-line::after {
   content: "";
   position: absolute;
   top: 38px;
@@ -259,7 +259,7 @@
   }
 }
 
-.editor__buttons {
+.my-post__buttons {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
