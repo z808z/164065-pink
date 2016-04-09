@@ -27,7 +27,7 @@
                     url("../img/bg-back-mobile.jpg");
   background-size: 258px auto, 700px auto;
   background-repeat: no-repeat;
-  background-position: 50% 175px, top center;
+  background-position: 0% 175px, top center;
   @media @mobile-width-only and (min-resolution: 144dpi),
          @mobile-width-only and (min-resolution: 1.5dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png"),
@@ -46,7 +46,7 @@
   @media @desktop-widths {
     background-image: url("../img/iphone-hand-desktop@1x.png"),
                       url("../img/bg-back-desktop.jpg");
-    background-size: 1050px auto, 2560px auto;
+    background-size: 1050px auto, 2625px auto;
     background-position: bottom center, top center;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png"),
@@ -82,11 +82,7 @@
   }
 }
 
-.page-header__title {
-  @media @mobile-width-only {
-    display: none;
-  }
-}
+
 
 
 .page-header__title--photo-page {
@@ -95,11 +91,13 @@
   line-height: 30px;
   color: #ffffff;
   font-weight: 300;
+  padding-top: 35px;
   @media @tablet-widths {
     width: 500px;
     margin: 0 auto;
     font-size: 50px;
     line-height: 60px;
+    padding-top: 0px;
   }
   @media @desktop-widths {
     width: 820px;

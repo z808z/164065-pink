@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!--module5-task1-->
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
 
@@ -94,15 +93,15 @@
             <li class="main-nav__item main-nav__item--active"><a href="index.html" class="main-nav__menu-link">Главная</a></li>
             <li class="main-nav__item"><a href="photo.html" class="main-nav__menu-link">Фотографии</a></li>
             <li class="main-nav__item"><a href="form.html" class="main-nav__menu-link">Конкурс</a></li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru" class="main-nav__menu-link">HTML ACADEMY</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru" class="main-nav__menu-link">HTML Academy</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <section class="page-header__wrapper download-app">
-      <header class="download-app__header">
+      <div class="download-app__header">
         <h2 class="download-app__title">Взгляни на жизнь иначе!</h2>
-      </header>
+      </div>
       <div class="download-app__content">
         <a href="#" class="btn btn--download">Скачать приложение</a>
         <ul class="download-app__items">
@@ -122,7 +121,7 @@
     <section class="features">
       <header class="features__header">
         <h2 class="features__title">Устали от серости мегаполиса?</h2>
-        <h2 class="features__title">Нам есть, что вам</br> предложить!</h2>
+        <h2 class="features__title">Нам есть, что вам<br> предложить!</h2>
       </header>
       <div class="features__bg-color">
         <div class="features__inner-wrapper">
@@ -163,31 +162,25 @@
           <input class="reviews__switcher-radio reviews__switcher-radio--2" type="radio" name="review" id="review-radio-2">
             <input class="reviews__switcher-radio reviews__switcher-radio--3" type="radio" name="review" id="review-radio-3">
           <div class="reviews__switcher-btn-list">
-            <label class="reviews__switcher-btn reviews__switcher-btn--1" for="review-radio-1">1</label>
-            <label class="reviews__switcher-btn reviews__switcher-btn--2" for="review-radio-2">2</label>
-            <label class="reviews__switcher-btn reviews__switcher-btn--3" for="review-radio-3">3</label>
+            <label class="reviews__switcher-btn reviews__switcher-btn--1" for="review-radio-1"></label>
+            <label class="reviews__switcher-btn reviews__switcher-btn--2" for="review-radio-2"></label>
+            <label class="reviews__switcher-btn reviews__switcher-btn--3" for="review-radio-3"></label>
           </div>
           <ul class="reviews__items">
             <li class="reviews__item reviews__item--1">
               <p class="reviews__user-detail">25 лет, водитель трамвая</p>
               <h3 class="reviews__user-name">Николай Петров</h3>
-              <blockquote class="reviews__text">
-                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
-              </blockquote>
+              <blockquote class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
             </li>
             <li class="reviews__item reviews__item--2">
               <p class="reviews__user-detail">25 лет, водитель трамвая</p>
               <h3 class="reviews__user-name">Сергей Иванов</h3>
-              <blockquote class="reviews__text">
-                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
-              </blockquote>
+              <blockquote class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
             </li>
             <li class="reviews__item reviews__item--3">
               <p class="reviews__user-detail">25 лет, водитель трамвая</p>
               <h3 class="reviews__user-name">Петр Сидоров</h3>
-              <blockquote class="reviews__text">
-                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
-              </blockquote>
+              <blockquote class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
             </li>
           </ul>
       </div>
@@ -199,9 +192,9 @@
           <input type="radio" class="fares__slide-radio fares__slide-radio--2" id="fare2" name="fares" checked>
           <input type="radio" class="fares__slide-radio fares__slide-radio--3" id="fare3" name="fares">
           <div class="fares__switch-points">
-            <label for="fare1" class="fares__switch-point fares__switch-point--1"></label>
-            <label for="fare2" class="fares__switch-point fares__switch-point--2"></label>
-            <label for="fare3" class="fares__switch-point fares__switch-point--3"></label>
+            <label for="fare1" class="fares__switch-btn fares__switch-btn--1"></label>
+            <label for="fare2" class="fares__switch-btn fares__switch-btn--2"></label>
+            <label for="fare3" class="fares__switch-btn fares__switch-btn--3"></label>
           </div>
           <table class="fares__list">
             <thead>
@@ -300,7 +293,7 @@
             </div>
           </div>
           <div class="contacts__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124036!2d30.32089461618557!3d59.93879686904783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1458569033480" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124036!2d30.32089461618557!3d59.93879686904783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1458569033480" style="border:0"></iframe>
           </div>
         </section>
   </main>
@@ -389,7 +382,7 @@
         <div class="page-footer__section">
           <a href="https://htmlacademy.ru/" class="page-footer__designed">
             <span>Разработано</span>
-            <svg class="page-footer__logo-htmlacademy" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
+            <svg class="page-footer__logo-htmlacademy" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
                width="27" height="34" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
               <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
                 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5
@@ -403,5 +396,6 @@
       </div>
     </footer>
   <script src="js/script.js"></script>
+  <script src="js/picturefill.min.js"></script>
   </body>
 </html>

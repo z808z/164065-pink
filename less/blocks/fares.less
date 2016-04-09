@@ -35,10 +35,11 @@
   }
 }
 
-.fares__switch-point {
+.fares__switch-btn {
   height: 6px;
   width: 6px;
   margin: 0 6px;
+  padding: 3px;
   border-radius: 50%;
   background-color: #bec2c7;
   border: 3px solid #f2f2f2;
@@ -47,21 +48,22 @@
   }
 }
 
-.fares__switch-point:hover {
+.fares__switch-btn:hover {
   cursor: pointer;
   background-color: #7e868f;
 }
 
-.fares__switch-point:active {
+.fares__switch-btn:active {
   background-color: #e9ebec;
 }
 
-.fares__slide-radio--1:checked ~ .fares__switch-points .fares__switch-point--1,
-.fares__slide-radio--2:checked ~ .fares__switch-points .fares__switch-point--2,
-.fares__slide-radio--3:checked ~ .fares__switch-points .fares__switch-point--3 {
+.fares__slide-radio--1:checked ~ .fares__switch-points .fares__switch-btn--1,
+.fares__slide-radio--2:checked ~ .fares__switch-points .fares__switch-btn--2,
+.fares__slide-radio--3:checked ~ .fares__switch-points .fares__switch-btn--3 {
   background-color: #ffffff;
   border: 3px solid #283645;
   cursor: default;
+  padding: 3px;
 }
 
 .fares__slide-radio--1:checked ~ .fares__list {
@@ -91,6 +93,7 @@
   margin: 64px 0 100px 0;
   table-layout: fixed;
   border-collapse: separate;
+  border-spacing: 1px;
   @media @tablet-widths {
     width: 100%;
     margin: 36px 0 69px 0;
@@ -151,7 +154,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: -2px;
+    left: 0px;
     width: 70px;
     height: 70px;
     background-image: linear-gradient(135deg, transparent 23%, #d22856 23%, #d22856 50%, transparent 50%);

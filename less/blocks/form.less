@@ -167,10 +167,10 @@
 }
 
 .form__section--user-app {
-  width: @mobile-width-wrapper + 2 * @mobile-width-wrapper-padding;
-  margin-left: -@mobile-width-wrapper-padding;
-  margin-right: -@mobile-width-wrapper-padding;
-  padding: 35px 0 0 0;
+  width: 100vw;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 35px 0 0;
   background-color: #f2f2f2;
   @media @tablet-widths {
     order: -2;
@@ -340,11 +340,11 @@
 }
 
 .form__section--user-achievement {
-  width: @mobile-width-wrapper + 2 * @mobile-width-wrapper-padding;
-  margin-left: -@mobile-width-wrapper-padding;
-  margin-right: -@mobile-width-wrapper-padding;
-  padding: 35px 0 4px 0;
-  background-color: #f2f2f2;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 35px 0 4px;
+    background-color: #f2f2f2;
+    width: 100vw;
   @media @tablet-widths {
     flex-direction: column;
     align-items: flex-start;
@@ -384,7 +384,7 @@
 .form__option--checkbox {
   margin-bottom: 52px;
   @media @desktop-widths {
-    width: 200px;
+    width: 33%;
     margin: 0 0 52px 0px;
   }
 }
@@ -470,7 +470,7 @@
     margin-bottom: 33px;
   }
   @media @desktop-widths {
-    width: 820px;
+    width: 100%;
     padding: 20px 60px 40px 60px;
     margin-bottom: 68px;
     text-align: center;

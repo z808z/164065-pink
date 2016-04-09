@@ -109,7 +109,7 @@ a.contacts__item-detail:active {
   position: relative;
   height: 200px;
   background-color: #c5c2bf;
-  background-image: url("../img/map.jpg");
+  background-image: url("../img/bg-map.png");
   background-repeat: no-repeat;
   background-position: bottom;
   @media @tablet-widths {
@@ -118,7 +118,13 @@ a.contacts__item-detail:active {
   @media @desktop-widths {
     height: 500px;
   }
+  & iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
+
+
 
 .contacts__map::before,
 .contacts__map::after {
